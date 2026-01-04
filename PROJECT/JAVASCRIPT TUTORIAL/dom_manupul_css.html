@@ -1,0 +1,35 @@
+
+<style>
+
+    div{
+        background-color: black;
+        width: 100px;
+        height: 100px;
+        color: aliceblue;
+        transition: 2s;
+    }
+    .widthincc{
+        width: 900px;
+      
+    }
+
+</style>
+
+<div id="box" >wdwd</div>
+<button onclick="changeee()">change colour</button>
+<button onclick="undo()">undo</button>
+
+<script>
+
+    var box=document.getElementById("box")
+
+    function changeee(){
+        box.setAttribute("class","widthincc") // <div id="box" class="widthincc" >wdwd</div>
+        box.style.backgroundColor="red"
+    }
+    function undo() {
+        box.removeAttribute("class");        // <div id="box" class="" >wdwd</div>
+        box.style.backgroundColor = "black";
+    }
+
+</script>
