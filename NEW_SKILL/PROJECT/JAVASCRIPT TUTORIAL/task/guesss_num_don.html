@@ -1,0 +1,34 @@
+<h1>Guess num 1 to 10</h1>
+<input id="guess">
+<button onclick="check()">check</button>
+<p id="msg">you are wrong!!</p>
+<h2 id = "num">num</h2>
+<h3 id="scrore">life</h3>
+
+<script>
+    var guessnum=document.getElementById("guess")
+    var message=document.getElementById("msg")
+    var random_num=Math.floor(Math.random()*10)+1
+    var numberis=document.getElementById("num")
+    numberis.textContent=random_num
+    var score=document.getElementById("scrore")
+    score=10
+
+    function check()
+    {
+        var enterednum = guessnum.value
+        if(random_num==enterednum)
+        {
+            message.textContent="right"
+            alert("wonnn")
+        }
+        else
+        {   
+            score=score-1
+            scrore.textContent="scoree:"+score
+            message.textContent="wromg"
+        }
+
+
+    }
+</script>

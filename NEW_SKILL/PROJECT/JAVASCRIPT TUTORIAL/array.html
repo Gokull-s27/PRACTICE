@@ -1,0 +1,11 @@
+<h1 class="ok">one</h1>
+<h1 class="ok">two</h1>
+<h1 class="ok">three</h1>
+
+<script>
+    var div=document.querySelectorAll(".ok")//we can use queryselector for [use dot .name]class,[use #name ]id,tag(tag meaning h1,h2,p)
+    for(count=0;count<div.length;count=count+1)
+{
+    console.log(div[count].textContent)
+}
+</script>
